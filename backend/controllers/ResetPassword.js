@@ -18,7 +18,7 @@ const resetPasswordToken = async (req, res) => {
                                         {email:email},
                                         {
                                             token:token,
-                                            resetPasswordExpires: Date.now() + 5*60*60,
+                                            resetPasswordExpires: Date.now() + 5*60*60*1000,
                                         },
                                         {new:true});                  // {new:true} added because it return updated object so updatedDetails contain updated details;
         

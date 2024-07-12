@@ -7,11 +7,11 @@ exports.createSubSection = async (req, res) => {
     try {
       const { sectionId, title, description } = req.body                 
       const video = req.files.video
-       
+      
       if(!sectionId || !title || !description || !video){              
         return res.status(404).json({ success: false, message: "All Fields are Required" })  
       }
-     
+
       // Upload video file to Cloudinary
       const uploadDetails = await uploadImageToCloudinary(video,  process.env.FOLDER_NAME )
     

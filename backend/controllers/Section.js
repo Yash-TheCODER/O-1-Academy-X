@@ -14,7 +14,7 @@ const createSection = async (req, res) => {
 
         //update course with section ObjectID
         const updatedCourseDetails = await Course.findByIdAndUpdate(courseId,  {$push:{ courseContent:newSection._id, }}, {new:true},).populate({path: "courseContent",populate: {path: "subSection",},}).exec();                     
-       
+       console.log(updatedCourseDetails);
         return res.status(200).json({                              
             success:true,
             message:'Section created successfully',
