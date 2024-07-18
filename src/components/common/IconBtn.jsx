@@ -12,7 +12,7 @@ export default function IconBtn({text, onclick, children, disabled, outline = fa
                       </>
                      ) : (text)  
           }
-
+ 
       </button>
     
 
