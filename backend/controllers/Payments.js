@@ -110,7 +110,8 @@ const enrollStudents = async(courses, userId, res) => {
         const enrolledStudent = await User.findByIdAndUpdate(userId,  {$push:{ courses: courseId,  courseProgress: courseProgress._id, }},{new:true})
             
         ///Send mail to the Student;
-        const emailResponse = await mailSender( enrollStudents.email, `Successfully Enrolled into ${enrolledCourse.courseName}`,  courseEnrollmentEmail(enrolledCourse.courseName, `${enrolledStudent.firstName}`)) 
+        const emailResponse = await mailSender( enrollStudents.email, `Successfully Enrolled into ${enrolledCourse.courseName}`,  courseEnrollmentEmail(enrolledCourse.courseName, `${enrolledStudent.firstName}`))
+        console.log('Email sent successfully',emailResponse); 
     }
         catch(error) {
             console.log(error);
@@ -121,7 +122,7 @@ const enrollStudents = async(courses, userId, res) => {
 
 
 exports.sendPaymentSuccessEmail = async(req, res) => {
-    const {orderId, paymentId, amount} = req.body;
+    const {orderId, paymentId, amount} = req.body; 
 
     const userId = req.user.id;
 

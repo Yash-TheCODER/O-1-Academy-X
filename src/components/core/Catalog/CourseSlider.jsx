@@ -5,7 +5,7 @@ import "swiper/css"                                                        //onl
 import Course_Card from './Course_Card'
 
 
-const CourseSlider = ({Courses}) => { 
+const  CourseSlider = ({Courses}) => { 
 
   return (
     <>
