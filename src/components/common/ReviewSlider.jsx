@@ -10,7 +10,7 @@ import { FaStar } from "react-icons/fa"                         // Icons
 
 import { apiConnector } from "../../services/apiconnector"          // Get apiFunction and the endpoint
 import { ratingsEndpoints } from "../../services/apis"
-
+import { Pagination , Autoplay, Navigation} from 'swiper/modules';
 
 
 function ReviewSlider(){
@@ -34,8 +34,8 @@ function ReviewSlider(){
   return (
     <div className="text-white">
       <div className="my-[50px] h-[184px] max-w-maxContentTab lg:max-w-maxContent">
-        
-        <Swiper className="w-full " slidesPerView={3} spaceBetween={25} loop={true} freeMode={true} autoplay={{delay: 2500,  disableOnInteraction: false, }} >
+      {/* freeMode={true} */}
+        <Swiper className="w-full mySwiper" loop={true} slidesPerView={2} spaceBetween={25}  modules={[ Autoplay, Navigation, Pagination ]} pagination={true} autoplay={{delay: 2500,  disableOnInteraction: false, }}  >
 
           {reviews.map((review, i) => {
             return (
