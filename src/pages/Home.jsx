@@ -118,7 +118,7 @@ const Home = () => {
             <InstructorSection />
             <h1 className = "text-center text-4xl font-semibold mt-8"> Reviews from Other Learners </h1>
             {/* Review Slider here */}
-            {/* <ReviewSlider/> */}
+            <ReviewSlider/>
 
         </div>
 
