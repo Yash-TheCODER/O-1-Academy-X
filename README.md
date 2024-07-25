@@ -1,17 +1,17 @@
 # Hi, I'm Yash! 👋
 I am a Full Stack web developer and competitve programmer.
 
-# StudySphere [```live```](https://study-sphere-yash-rastogi-frontend.vercel.app/)
+# O(1) Academy-X [```live```](https://study-sphere-yash-rastogi-frontend.vercel.app/)
 
-StudySphere is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
+O(1) Academy-X is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
 
-## StudySphere aims to provide:
+## O(1) Academy-X aims to provide:
 * A seamless and interactive learning experience for students, making education more accessible and engaging.
 * A platform for instructors to showcase their expertise and connect with learners across the globe.
 
 ## System Architecture
 
-The StudySphere ed-tech platform consists of three main components: the front end, the back end, and the database. The platform follows a client-server architecture, with the front end serving as the client and the back end and database serving as the server.
+The O(1) Academy-X ed-tech platform consists of three main components: the front end, the back end, and the database. The platform follows a client-server architecture, with the front end serving as the client and the back end and database serving as the server.
 
 ### Front-end
 
@@ -28,7 +28,7 @@ The database for the platform is built using MongoDB, which is a NoSQL database 
 
 ## Front-end
 
-The front end of StudySphere has all the necessary pages that an ed-tech platform should have. Some of these pages are:
+The front end of O(1) Academy-X has all the necessary pages that an ed-tech platform should have. Some of these pages are:
 
 ### For Students:
 1. **Homepage:**
@@ -100,7 +100,7 @@ The front end of StudySphere has all the necessary pages that an ed-tech platfor
 
 ## Back-end
 
-The back end of StudySphere provides a range of features and functionalities, including:
+The back end of O(1) Academy-X provides a range of features and functionalities, including:
 
 1. **User Authentication and Authorization:**
     - Students and instructors can sign up and log in using their email addresses and password
@@ -124,7 +124,7 @@ The back end of StudySphere provides a range of features and functionalities, in
 
 ## Data Models and Database Schema
 
-The back end of StudySphere uses a range of data models and database schemas to manage data, including:
+The back end of O(1) Academy-X uses a range of data models and database schemas to manage data, including:
 1. **Student Schema:**
     - Includes fields such as name, email, password, and course details for each student.
 
@@ -136,7 +136,7 @@ The back end of StudySphere uses a range of data models and database schemas to 
 
 ## API Design
 
-The StudySphere platform's API is designed following the REST architectural style. The API is implemented using Node.js and Express.js. It uses JSON for data exchange and follows standard HTTP request methods such as GET, POST, PUT, and DELETE.
+The O(1) Academy-X platform's API is designed following the REST architectural style. The API is implemented using Node.js and Express.js. It uses JSON for data exchange and follows standard HTTP request methods such as GET, POST, PUT, and DELETE.
 
 ### Sample list of API endpoints and their functionalities:
 1. **/api/auth/signup (POST)** - Create a new user (student or instructor) account.
