@@ -22,7 +22,8 @@ const resetPasswordToken = async (req, res) => {
                                         },
                                         {new:true});                  // {new:true} added because it return updated object so updatedDetails contain updated details;
         
-        const url = `http://localhost:3000/update-password/${token}`                              //create url -> 3000 bcoz frontend running on 3000
+                const frontendUrl = process.env.FRONTEND_URL || "http://localhost:3000"; //deployed frontend URL in production, localhost for local dev
+                const url = `${frontendUrl}/update-password/${token}` //create reset password url
         await mailSender(email, "Password Reset Link",`Your Link for email verification is ${url}. Please click this url to reset your password.`);   //send mail containing the url
                          
         return res.json({                                                                        
